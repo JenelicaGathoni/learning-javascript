@@ -26,3 +26,19 @@ const foo = null ?? "default string";
 console.log(foo);
 const baz = 0 ?? 10;
 console.log(baz);
+// The ternary operator
+// defining a function that asks for books in a certain way depending on whether one is a friend or not
+function getBooks(isFriend) {
+  return isFriend ? "Friendly" : "Professional";
+}
+console.log(getBooks(true));
+console.log(getBooks(false));
+//Comma Operator
+let r = 1;
+r = (r++, r);
+console.log(r);
+for (let i = 0, j = 10; i < 5; i++, j--) {
+  console.log(i, j);
+}
+let result = (console.log("Hello"), 42);
+console.log(result);
