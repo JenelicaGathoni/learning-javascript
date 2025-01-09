@@ -42,3 +42,23 @@ for (let i = 0, j = 10; i < 5; i++, j--) {
 }
 let result = (console.log("Hello"), 42);
 console.log(result);
+// Relational Operators
+// in operrator
+const Jenel = { age: 20, skinColor: "brown", height: "short" };
+console.log("age" in Jenel);
+delete Jenel.age;
+if ("age" in Jenel === false) {
+  Jenel.age = "infinite";
+}
+console.log(Jenel.age);
+// if you are using it in arrays you should specify the index not the value at that index
+const classes = ["Violet", "Orange", "Lagoon", "Fuchsia"];
+console.log(0 in classes);
+console.log(7 in classes);
+
+// Instanceof Operator
+class Dog {}
+class Cat {}
+const myPet = new Dog();
+console.log(myPet instanceof Dog);
+console.log(myPet instanceof Cat);
