@@ -5,7 +5,9 @@ function square(number) {
   return number * number;
 }
 console.log(square(20));
-/* When you pass an object as a parameter, if the function changes the objects properties, that change is visible outside the function*/
+/* When you pass an object as a parameter, 
+if the function changes the objects properties, 
+that change is visible outside the function*/
 function myFunc(theObject) {
   theObject.make = "Toyota";
 }
@@ -19,7 +21,8 @@ myFunc(myCar);
 console.log(myCar.make);
 // Function Expressions
 //Can be anonymous
-//convenient when passing a function as an argument to another function
+//convenient when passing a function as an argument to another
+// function
 const square1 = function (number) {
   return number * number;
 };
@@ -45,9 +48,38 @@ function countdown(number) {
   }
 }
 countdown(5);
+function walkTree(node) {
+  if (node === null) {
+    return;
+  }
+  for (let i = 0; i < node.childNodes.length; i++) {
+    walkTree(node.childNodes.length[i]);
+  }
+}
 //Function hoisting
 // Only works with function variables not function expressions
 console.log(cube1(5));
 function cube1(n) {
   return n * n * n;
 }
+//variables defined inside a function cannot be accessed from anywhere outside the function.
+// a function defined inside another function can also access all variables defined in its parent function and any other variables the parent function has access to
+
+//Nested functions and closures
+// A closure is an expression that can have free variables together with an environmet that binds those variables
+function addSquares(a, b) {
+  function square(x) {
+    return x * x;
+  }
+  return square(a) + square(b);
+}
+console.log(addSquares(4, 5));
+
+function outside(x) {
+  function inside(y) {
+    return x + y;
+  }
+  return inside;
+}
+const fnInside = outside(3);
+console.log(fnInside(5));
