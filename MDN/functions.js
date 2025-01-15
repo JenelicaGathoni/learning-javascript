@@ -159,7 +159,7 @@ robot1.sayHello();
 //  and deliberate limitaitions in usage
 
 // theu don't have their own bindings to this arguments or super and should not be used as methods
-// they cannot be used as constructors (callin them with new throws a typeError)
+// they cannot be used as constructors (calling them with new throws a typeError)
 // They cannot use yield within their body and cannot be created as generator functions
 
 // Destructuring traditional functional expressions to form an arrow function
@@ -177,3 +177,25 @@ robot1.sayHello();
 // 3. Remove the parameter parantheses
 // The parathesis  can only be removed if the function has a single simple parameter. the paranthesis remain if it has multiple parameters, no parameters or default, destructured or rest parameters
 (a) => a + 100;
+//expression body
+const func = (x) => x * x;
+// expression block
+const func2 = (x, y) => {
+  return x + y;
+};
+/* function add100(a) {
+  return a + 100;
+}
+
+add100(a) => {
+  return a + 100;
+}
+console.log(add100(20)); */
+/* const add100 = function (a) {
+  return a + 100;
+
+}; */
+const add100 = (a) => {
+  return a + 100;
+};
+console.log(add100(20));
