@@ -66,7 +66,9 @@ function cube1(n) {
 // a function defined inside another function can also access all variables defined in its parent function and any other variables the parent function has access to
 
 //Nested functions and closures
-// A closure is an expression that can have free variables together with an environmet that binds those variables
+// A closure is an expression that can have free variables
+//  together with an environmet that binds those variables
+//If an enclosed funtion defines a variable with the same name as a variable in the outer scope, then there is no way to refer to the variable in the outer scope again.
 function addSquares(a, b) {
   function square(x) {
     return x * x;
@@ -83,3 +85,12 @@ function outside(x) {
 }
 const fnInside = outside(3);
 console.log(fnInside(5));
+
+const pet = function (name) {
+  const getName = function () {
+    return name;
+  };
+  return getName;
+};
+const myPet = pet("Vivie");
+console.log(myPet());
