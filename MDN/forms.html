@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="./forms.css" />
+  </head>
+  <body>
+    <h1>Tell me about the music you love</h1>
+    <form name="SelectForm" class="form">
+      <label for="musicTypes"> Choose your favorite music genres </label>
+      <select name="musicTypes" id="musicTypes" multiple>
+        <option selected>R&B</option>
+        <option>Jazz</option>
+        <option>Blues</option>
+        <option>Focus</option>
+        <option>Newage</option>
+        <option>Hiphop</option>
+        <option>Opera</option>
+        <option>Classical</option>
+        <option>Acoustic</option>
+      </select>
+      <button id="btn" type="button" class="button">
+        How many options are selected
+      </button>
+    </form>
+    <script type="module" src="./loops.js"></script>
+  </body>
+</html>

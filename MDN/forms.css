@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-flow: column;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.form {
+  display: flex;
+  flex-flow: column;
+  margin-block: 20px;
+  max-width: 500px;
+  gap: 20px;
+}
+.button {
+  background-color: rgba(2, 2, 2, 0.212);
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(2, 2, 2, 0.4);
+}
