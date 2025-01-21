@@ -6,8 +6,25 @@
 body {
   display: flex;
   flex-flow: column;
+  align-items: center;
   margin: 20px auto;
   max-width: 1000px;
+  color: aliceblue;
+
+  height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../MDN/images/club.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: brightness(0.3);
 }
 .form {
   display: flex;
@@ -15,14 +32,33 @@ body {
   margin-block: 20px;
   max-width: 500px;
   gap: 20px;
+  height: fit-content;
 }
 .button {
-  background-color: rgba(2, 2, 2, 0.212);
-  border: none;
+  background-color: rgba(244, 238, 238, 0.146);
+  border: 1px solid rgb(255, 183, 0);
+  color: aliceblue;
+
   padding: 8px;
   border-radius: 4px;
 }
 .button:hover {
   cursor: pointer;
-  background-color: rgba(2, 2, 2, 0.4);
+  background-color: rgba(244, 238, 238, 0.397);
+  transform: scaley(1.1);
+}
+.list {
+  background-color: rgba(244, 238, 238, 0.146);
+  border: 1 px solid aliceblue;
+  color: aliceblue;
+  scrollbar-width: none;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+}
+.list:focus {
+  border: none;
+  outline: goldenrod;
+}
+.list option:active {
+  background-color: rgba(218, 165, 32, 0.553);
 }
