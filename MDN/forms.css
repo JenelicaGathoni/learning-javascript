@@ -10,6 +10,7 @@ body {
   margin: 20px auto;
   max-width: 1000px;
   color: aliceblue;
+  background-color: rgb(60, 44, 2);
 
   height: 100vh;
 }
@@ -35,7 +36,7 @@ body::before {
   height: fit-content;
 }
 .button {
-  background-color: rgba(244, 238, 238, 0.146);
+  background-color: goldenrod;
   border: 1px solid rgb(255, 183, 0);
   color: aliceblue;
 
@@ -44,7 +45,7 @@ body::before {
 }
 .button:hover {
   cursor: pointer;
-  background-color: rgba(244, 238, 238, 0.397);
+  background-color: gold;
   transform: scaley(1.1);
 }
 .list {
