@@ -5,8 +5,18 @@ if (true) {
   var z = 30; // global
 }
 console.log(z);
+// Each scope can look out into the scope around it
+// But when multiple variables have the same name- In that case code can only see the innermost one
+const halve = function (n) {
+  return n / 2;
+};
 
-// if multiple bindings have the same name code can only see the innermmost one
+let n = 10;
+console.log(halve(100));
+// → 50
+console.log(n); //10
+
+// if multiple bindings have the same name, code can only see the innermmost one
 //lexical scoping
 const hummus = function (factor) {
   const ingredient = function (amount, unit, name) {
