@@ -11,3 +11,12 @@ function greet(who) {
 }
 greet("Harry");
 console.log("Bye");
+//In javascript if you pass too many arguments to a function the extra ones are ignored and if you pass too few the missing ones are assigned the value undefined
+
+//If you write an = operator after a parameter, followed by an expression ,the value of that expression will replace the argument when it is  not given.
+function roundto(n, step = 1) {
+  let remainder = n % step;
+  return n - remainder + (remainder < step / 2 ? 0 : step);
+}
+console.log(roundto(4.5));
+console.log(roundto(4.5, 2));
