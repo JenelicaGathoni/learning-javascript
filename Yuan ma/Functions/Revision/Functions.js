@@ -77,5 +77,16 @@ const calculateDiscount = (price, discount) => {
 console.log(calculateDiscount(350, 10));
 
 //Write a function outer that takes a number and returns an inner arrow function that adds that number to another number. The inner function should accept a number and return the sum.
- function outer(x){
-    
+//Modify the function so that instead of addition, it allows different operations (e.g., "add", "multiply", "subtract") using a third parameter.
+
+// const outer = (num1) => {
+//   const inner = (num2) => num1 + num2;
+//   return inner(5);
+// };
+// console.log(outer(5));
+
+// const outer = (num1) => {
+//   return (num2) => num1 + num2;
+// };
+// const add5 = outer(5);
+// console.log(add5(10));
