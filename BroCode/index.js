@@ -1,3 +1,6 @@
-document.getElementById("myH1").textContent = "this is a heading";
-document.getElementById("myP").textContent = "this is a paragraph";
-window.alert("This is a webpage created using Javascript");
+let jina = "Jenelica";
+let age = 20;
+let isStudent = false;
+document.getElementById("p1").textContent = `Name: ${jina}`;
+document.getElementById("p2").textContent = `Age: ${age}`;
+document.getElementById("p3").textContent = `Student: ${false}`;
