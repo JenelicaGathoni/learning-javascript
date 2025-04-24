@@ -22,7 +22,7 @@ let myFavoriteSongs = [
   "missPainkiller",
   "tomorrowMorning",
   "intheCity",
-  "cryForYoy",
+  "cryForYou",
 ];
 console.log(myFavoriteSongs.length);
 myFavoriteSongs.push("tightRope");
