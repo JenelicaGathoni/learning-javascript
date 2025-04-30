@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f9b0f,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f9b0f,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #f8f8f8;
+  margin-inline: 72px;
+  display: flex;
+  flex-flow: column;
+}
+
+h1 {
+  color: #ff5e5b;
+  font-weight: 100;
+  font-size: 3.5em;
+}
+h2 {
+  margin-block: 1em;
+  color: #eaeaea;
+  font-weight: 100;
+  font-size: 2.5em;
+}
+p {
+  line-height: 1.5em;
+  font-size: large;
+  color: #e0dddd;
+  max-width: 60%;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 1em;
+}
+img {
+  width: 40%;
+  height: auto;
+}
+form {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5em;
+  margin-block: 1em;
+  background-color: #eaeaea4a;
+  padding: 20px 28px;
+  border-radius: 8px;
+  max-width: 60%;
+}
+input {
+  padding: 8px 44px;
+  background-color: #eaeaea4a;
+  border: none;
+  border-radius: 4px;
+}
+button {
+  padding: 8px 44px;
+  border: none;
+  border-radius: 4px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #0fe70f;
+  color: #f8f8f8;
+}
+figure {
+  background-color: #f8f8f833;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #0f9b0f;
+  border-radius: 8px;
+
+  padding: 20px 32px;
+}
+figure p {
+  font-size: x-small;
+  text-align: center;
+}
+figure h4 {
+  color: #f8f8f8;
+  text-align: center;
+}
+figure:hover {
+  background-color: #f8f8f861;
+  padding: 24px 36px;
+  border: 2px solid #0f9b0f;
+}
+footer {
+  background-color: #f8f8f83f;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 24px 32px;
+  margin-top: 72px;
+  margin-inline: -72px;
+}
