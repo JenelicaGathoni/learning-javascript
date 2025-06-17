@@ -1,3 +1,7 @@
+/*
+  A higher order function is a function that can take another function as an input or can return another function as output
+ */
+
 // creating a higherOrder function that takes the height of a pole and checks
 // if its greater than that of the fence that was originally there
 function fenceBuilder(fenceHeight) {
@@ -22,3 +26,10 @@ function noisy(f) {
 noisy(Math.min(3, 2, 1));
 
 //
+function makePasta(sauceFunction) {
+  return "Boiled pasta with " + sauceFunction();
+}
+function tomatoSauce() {
+  return "tomato sauce";
+}
+console.log(makePasta(tomatoSauce));
